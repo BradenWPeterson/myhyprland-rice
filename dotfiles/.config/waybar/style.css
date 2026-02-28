@@ -51,11 +51,11 @@ button:hover {
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
     background-color: #FFFFFF;
-    color: #3CB8F4;
+    color: #64727D;
 }
 
 #workspaces {  
-    background-color: #3CB8F4;
+    background-color: #64727D;
     border-radius: 15px;
     border: 2px solid #FFFFFF;
 }
@@ -70,13 +70,13 @@ button:hover {
 #workspaces button.active {
     padding: 0 5px;
     background-color: #FFFFFF;
-    color: #3CB8F4;
+    color: #64727D;
 }
 
 
 #workspaces button:hover {
     background: #FFFFFF;
-    color: #3CB8F4;
+    color: #64727D;
 }
 
 /*#workspaces button.focused {
@@ -142,7 +142,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #3CB8F4;
+    background-color: #64727D;
 }
 
 @keyframes blink {
@@ -178,7 +178,7 @@ button:hover {
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #3CB8F4;
+    background-color: #64727D;
     color: #000000;
 }
 
@@ -187,7 +187,7 @@ label:focus {
 }
 
 #cpu {
-    background-color: #3CB8F4;
+    background-color: #64727D;
 }
 
 #memory {
@@ -211,7 +211,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #3CB8F4;
+    background-color: #64727D;
 }
 
 #pulseaudio.muted {
