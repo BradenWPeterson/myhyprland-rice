@@ -1,0 +1,24 @@
+(defpoll cpu_percent :interval "2s" `~/.config/eww/scripts/cpu.sh`)
+(defpoll mem_percent :interval "4s" `~/.config/eww/scripts/mem.sh`)
+
+(defwidget stat_row [icon label value]
+  (box
+    :style "margin: 6px 0; padding: 8px; border-radius: 11px; background: rgba(11, 22, 50, 0.72); border: 1px solid rgba(125, 172, 255, 0.25);"
+    (label :text icon :style "color: #9cc1ff; font-size: 14px; margin-right: 8px;")
+    (label :text label :style "color: #c5dcff; font-size: 12px;" :hexpand true :xalign 0)
+    (label :text "${value}%" :style "color: #c5dcff; font-size: 12px; font-weight: 700;" :xalign 1)))
+
+(defwidget telemetry []
+  (box :orientation "v"
+    :style "min-width: 260px; padding: 14px; border-radius: 16px; border: 1px solid rgba(133, 178, 255, 0.40); background: rgba(8, 18, 44, 0.92);"
+    (box :style "margin-bottom: 10px;" :hexpand true
+      (label :text "System Telemetry" :style "color: #c5dcff; font-size: 13px; font-weight: 700;" :hexpand true :xalign 0.5))
+    (stat_row :icon "󰍛" :label "CPU" :value {cpu_percent})
+    (stat_row :icon "󰘚" :label "Memory" :value {mem_percent})))
+
+(defwindow space-telemetry
+  :monitor 0
+  :stacking "fg"
+  :focusable false
+  :geometry (geometry :x "22px" :y "58px" :width "260px" :anchor "top right")
+  (telemetry))
