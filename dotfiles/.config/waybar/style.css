@@ -142,7 +142,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #3CB8F4;
 }
 
 @keyframes blink {
@@ -178,7 +178,7 @@ button:hover {
 }
 
 #power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
+    background-color: #3CB8F4;
     color: #000000;
 }
 

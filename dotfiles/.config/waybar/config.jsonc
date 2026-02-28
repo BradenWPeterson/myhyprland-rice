@@ -19,6 +19,7 @@
 
         "pulseaudio",
         "cpu",
+        "battery",
         "clock",
         "custom/power"
     ],
