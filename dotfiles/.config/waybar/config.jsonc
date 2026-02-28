@@ -18,6 +18,7 @@
     "modules-right": [
 
         "pulseaudio",
+        "backlight",
         "network",
         "battery",
         "clock",
