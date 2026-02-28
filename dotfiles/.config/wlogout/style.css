@@ -9,6 +9,7 @@ window {
 
 button {
     border-radius: 20;
+	margin: 10px;
     border-color: black;
 	text-decoration-color: #FFFFFF;
     color: #FFFFFF;
