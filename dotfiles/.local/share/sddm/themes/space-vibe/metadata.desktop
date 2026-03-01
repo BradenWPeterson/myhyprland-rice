@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Space Vibe
+Description=Clean space-themed SDDM login for Hyprland rice
+Author=braden
+License=CC-BY-SA
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=space-vibe
+Theme-API=2.0
