@@ -16,6 +16,7 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "custom/airpods",
         "network",
         "battery",
         "custom/power"
@@ -68,6 +69,13 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+
+    "custom/airpods": {
+        "exec": "~/.config/waybar/scripts/airpods.sh --status",
+        "return-type": "json",
+        "interval": 5,
+        "on-click": "~/.config/waybar/scripts/airpods.sh --toggle"
     },
 
     "custom/power": {
